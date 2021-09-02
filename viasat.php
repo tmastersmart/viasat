@@ -20,11 +20,11 @@ $url="/update?domains=___";
 
 
 
-
+$brand="viasat";
 $agent="mmexedescript v1";$phpVersion= phpversion();
 print "===============================================================
 ";
-print "Exede DAP script (c)2021 by winnfreenet.com all rights reserved
+print "$brand DAP script (c)2021 by winnfreenet.com all rights reserved
 ";
 print "$agent PHP:$phpVersion
 ";
@@ -40,7 +40,7 @@ $html = http_request('GET', $ip, 80 , $url);
 //
 $exede = strpos($html, 'notice.exede.net');
 if($exede){
-  print" exede DAP ";
+  print" $brand DAP ";
   $html = http_request('GET', "notice.exede.net", 80 , "/dap-redirect.php?host=$ip&url=$url");print"-"; 
   $html = http_request('GET', "notice.exede.net", 80 , "/dap/assets/style.css");print"-"; 
   $html = http_request('GET', "notice.exede.net", 80 , "/PolicyCheck.png");print"-"; 
