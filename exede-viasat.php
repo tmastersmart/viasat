@@ -1,15 +1,32 @@
 <?php
 // --------------------------------------------------
-// Excende Viasat DAP logon script   2021 v1
+// Excende Viasat DAP logon script   (C) 2021 v1
 // --------------------------------------------------
-$agent="mmexedescript v1";
+//
+// project URL
+// https://github.com/tmastersmart/viasat
+//
+// copy updates from this URL
+// https://raw.githubusercontent.com/tmastersmart/viasat/main/exede-viasat.php
+//
+// copyright 2021 by winnfreenet.com all rights recerved.
+$agent="mmexedescript v1";$phpVersion= phpversion();
+print "===============================================================
+";
+print "Exede DAP script (c)2021 by winnfreenet.com all rights reserved
+";
+print "$agent PHP:$phpVersion
+";
+print "===============================================================
+";
 // works great with duckdns.org to set your ip and logon at the same time.
 // but any url will work
+
 $ip = "www.duckdns.org";
 $url="/update?domains=packton&token=96bdda6e-7fa3-4adc-86ed-8fb38349cfa7&ip=";
 
 $datum = date('[H:i:s]');
-print "$datum Posting ->";
+print "$datum Posting $ip->";
 $error = ""; $getheader = false; $htmlON=false;
 
 $html = http_request('GET', $ip, 80 , $url);
@@ -20,12 +37,12 @@ $html = http_request('GET', $ip, 80 , $url);
 //
 $exede = strpos($html, 'notice.exede.net');
 if($exede){
-  print" exede DAP";
-  $html = http_request('GET', "notice.exede.net", 80 , "/dap-redirect.php?host=$ip&url=$url");
-  $html = http_request('GET', "notice.exede.net", 80 , "/dap/assets/style.css");
-  $html = http_request('GET', "notice.exede.net", 80 , "/PolicyCheck.png");
+  print" exede DAP ";
+  $html = http_request('GET', "notice.exede.net", 80 , "/dap-redirect.php?host=$ip&url=$url");print"-"; 
+  $html = http_request('GET', "notice.exede.net", 80 , "/dap/assets/style.css");print"-"; 
+  $html = http_request('GET', "notice.exede.net", 80 , "/PolicyCheck.png");print"-"; 
 // repost --- no error checking
-  $html = http_request('GET', $ip, 80 , "$url");
+  $html = http_request('GET', $ip, 80 , "$url");print"-"; 
  }
 
 print "ok";
@@ -33,14 +50,6 @@ print "ok";
 
 
 
-
-
-// $html = http_request('GET', $domain, 80, $url,$getdata,$postdata,$cookie,$timeout);
-//Example usages :
-//
-//echo http_request('GET', 'www.php.net');
-//echo http_request('GET', 'www.php.net', 80, '/manual/en/function.phpinfo.php');
-//echo http_request('GET', 'www.php.net', 80, '/manual/en/function.phpinfo.php', array('get1' => 'v_get1'), array(), array('cookie1' => 'v_cookie1'), array('X-My-Header' => 'My Value'));
 function http_request(
     $verb = 'GET',             /* HTTP Request Method (GET and POST supported) */
     $ip,                       /* Target IP/Hostname */
