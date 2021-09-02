@@ -10,6 +10,16 @@
 // https://raw.githubusercontent.com/tmastersmart/viasat/main/exede-viasat.php
 //
 // copyright 2021 by winnfreenet.com all rights recerved.
+// works great with duckdns.org to set your ip and logon at the same time.
+// but any url will work
+// 
+$ip = "www.duckdns.org";
+$url="/update?domains=______&token=____________________";
+
+
+
+
+
 $agent="mmexedescript v1";$phpVersion= phpversion();
 print "===============================================================
 ";
@@ -19,18 +29,10 @@ print "$agent PHP:$phpVersion
 ";
 print "===============================================================
 ";
-// works great with duckdns.org to set your ip and logon at the same time.
-// but any url will work
-
-$ip = "www.duckdns.org";
-$url="/update?domains=packton&token=96bdda6e-7fa3-4adc-86ed-8fb38349cfa7&ip=";
-
 $datum = date('[H:i:s]');
 print "$datum Posting $ip->";
 $error = ""; $getheader = false; $htmlON=false;
-
 $html = http_request('GET', $ip, 80 , $url);
-
 // --------------------------
 // bump my ISPS
 // ViaSat login prompt
