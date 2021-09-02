@@ -6,8 +6,6 @@
 // project URL
 // https://github.com/tmastersmart/viasat
 //
-// copy updates from this URL
-// https://raw.githubusercontent.com/tmastersmart/viasat/main/exede-viasat.php
 //
 // copyright 2021 by winnfreenet.com all rights recerved.
 // works great with duckdns.org to set your ip and logon at the same time.
