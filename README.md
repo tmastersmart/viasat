@@ -1,7 +1,11 @@
 Automated process to get rid of the viasat DAP screen 
 
-SCript post to a url like your ip login
-then if exede DAP is detected pressses on the button to log you in.
+enter a url to post to if DAP is detected it will logon.
+
+recomended to work with DDNS get request like www.duckdns.org 
+
+
+
 
 Can run anywhere PHP runs. 
 
