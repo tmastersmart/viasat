@@ -1,6 +1,6 @@
 <?php
 // --------------------------------------------------
-// Excende Viasat DAP logon script   (C) 2021 v1
+// Exede Viasat DAP logon script   (C) 2021 v1
 // --------------------------------------------------
 //
 // project URL
