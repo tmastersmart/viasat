@@ -11,10 +11,10 @@ Can run anywhere PHP runs.
 
 run on a PI by calling by chron 
 
-PHP exede-viasat.php >> /var/log/exede-viasat.log
+PHP exede.php >> /var/log/exede.log
 
 or
 
-PHP exede-viasat.php >/dev/null
+PHP exede.php >/dev/null
 
 
