@@ -2,18 +2,7 @@ Automated process to get rid of the viasat DAP screen
 Also called a gateway capture but built for viasat
 
                                                              
-                                                              
- .----.     .----..--.                                        
-  \    \   /    / |__|                                        
-   '   '. /'   /  .--.                                   .|   
-   |    |'    /   |  |    __                   __      .' |_  
-   |    ||    |   |  | .:--.'.         _    .:--.'.  .'     | 
-   '.   `'   .'   |  |/ |   \ |      .' |  / |   \ |'--.  .-' 
-    \        /    |  |`" __ | |     .   | /`" __ | |   |  |   
-     \      /     |__| .'.''| |   .'.'| |// .'.''| |   |  |   
-      '----'          / /   | |_.'.'.-'  / / /   | |_  |  '.' 
-                      \ \._,\ '/.'   \_.'  \ \._,\ '/  |   /  
-                       `--'  `"             `--'  `"   `'-'   
+
 
 enter a url to post to if DAP is detected it will logon.
 
