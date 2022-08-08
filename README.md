@@ -22,3 +22,4 @@ or
 PHP exede.php >/dev/null
 
 
+I no longer use viasat so no updates. If they change something you are free to make changes. Send them to me and I will add them here.
