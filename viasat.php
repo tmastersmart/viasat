@@ -1,13 +1,15 @@
 <?php
 // --------------------------------------------------
-// Exede Viasat DAP logon script   (C) 2021 v1
+// Exede Viasat DAP logon script   (C) 2021/22 v1
 // --------------------------------------------------
+// A script to auto press the DAP login button
+//
 //
 // project URL
 // https://github.com/tmastersmart/viasat
 //
 //
-// copyright 2021 by winnfreenet.com all rights recerved.
+// copyright 2021/2022 by winnfreenet.com all rights recerved.
 // works great with duckdns.org to set your ip and logon at the same time.
 // but any url will work
 // 
@@ -19,10 +21,10 @@ $url="/update?domains=___";
 
 
 $brand="viasat";
-$agent="mmexedescript v1";$phpVersion= phpversion();
+$agent="mmViasatScript v1";$phpVersion= phpversion();
 print "===============================================================
 ";
-print "$brand DAP script (c)2021 by winnfreenet.com all rights reserved
+print "$brand DAP script (c)2021/2022 by winnfreenet.com all rights reserved
 ";
 print "$agent PHP:$phpVersion
 ";
